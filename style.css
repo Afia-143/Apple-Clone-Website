@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.navbar{
+    position: relative;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    left: 100px;
+}
+
+.nav-ops{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+.nav-ops a, .nav-item{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+    cursor: pointer;
+}
+
+
+.dropdown{
+    width: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px 60px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 999;
+}
+
+.nav-item:hover .dropdown{
+    width: auto;
+    max-width: none;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    border-radius: 5px;
+}
+
+.list1{
+    list-style: none;
+    min-width: 200px;
+}
+
+.list1, .list2, .list-title{
+    font-size: 0.8rem;
+    color: #7a7e82;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.list1 li, .list2 li{
+    margin: 16px 20px;
+}
+
+.list1 a{
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+}
+
+.list2{
+    font-size: 0.6rem;
+    color: black;
+    margin-bottom: 10px;
+    list-style-type: none;
+    font-weight: 300;
+}
+
+.list2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.search, .cart {
+    height: 5px;
+    width: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    top: 30%;
+}
+
+.search {
+  right: 150px;
+}
+
+.cart {
+  right: 80px;
+}
+
+.bg-img1{
+    background-color: #f5f5f7;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-top: -10px;
+
+}
+.bg-img1 h1{
+    font-size: 3rem;
+    padding-top: 30px;
+}
+.bg-img1 p{
+    font-size: 1.5rem;
+}
+.bg-img1 img{
+    height: 250px;
+    position: absolute;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+button{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    margin-left: 125px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(13, 100, 188);
+    color: white;
+}
+
+.bg-img2{
+    background: linear-gradient(to bottom, rgb(187, 230, 244), white);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-top: -10px;
+
+}
+.bg-img2 h1{
+    font-size: 3rem;
+    padding-top: 30px;
+}
+.bg-img2 p{
+    font-size: 1.5rem;
+}
+.bg-img2 img{
+    height: 200px;
+    position: absolute;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.bg-img2 a{
+    position: absolute;
+    top: 190%;
+    left: 40%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, dodgerblue, purple, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Box Section */
+
+.section{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    color: black;
+    padding-top: 10px;
+    display: flex;
+}
+
+.box1{
+    width: 49%;
+    height: 600px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 15px;
+
+}
+
+.box1 p{
+    font-size: 1.5rem;
+}
+
+.box1 a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, dodgerblue, purple, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.b1{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 0;
+}
+
+.b1:hover{
+    background-color: rgb(58, 150, 243);
+}
+
+.b2{
+    background-color: transparent;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    margin-left: 20px;
+}
+
+.b2:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.ipad-img{
+    height: 350px;
+    margin-top: 20px;
+}
+
+.box2{
+    width: 49%;
+    height: 600px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0 15px;
+}
+
+.box2 p{
+    font-size: 1.5rem;
+}
+
+.macpro-img{
+    width: 80%;
+    height: 350px;
+}
+
+.box2 a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, dodgerblue, purple, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.airpod-img{
+    width: 80%;
+    height: 400px;
+}
+
+.iphone-img{
+    width: 80%;
+    height: 410px;
+    margin-top: 10px;
+}
+
+.trade-img{
+    width: 90%;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.card-img{
+    width: 80%;
+    height: 350px;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 1200px;
+    background-color: white;
+    color: #7a7e82;
+    padding: 10px;
+}
+
+.f1{
+    text-align: left;
+    font-size: 0.8rem;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.f1 p a{
+    color: #7a7e82;
+}
+
+.f2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px;
+}
+
+.f2 .footer-list ul li{
+    list-style-type: none;
+    font-size: 0.8rem;
+    color: #7a7e82;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.f2 .footer-list h4{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.f3 p{
+    font-size: 0.7rem;
+}
+
+.f3 p a{
+    font-size: 0.7rem;
+    color: dodgerblue;
+}
+
+.f4{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f4 p a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.f4 p a:hover{
+    text-decoration: underline;
+}
